@@ -1,5 +1,5 @@
 # Use the official image as a parent image
-FROM tomcat:10.1.4-jdk20-openjdk-slim
+FROM tomcat:10.1.13-jdk21-openjdk-slim-bookworm
 
 # Remove the default webapps from Tomcat to avoid conflicts
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
