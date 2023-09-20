@@ -1,5 +1,5 @@
 # Use the official image as a parent image
-FROM tomcat:10.1.4-jdk20-openjdk-slim-bookworm
+FROM tomcat:9.0.58-jdk17-openjdk-slim
 
 # Remove the default webapps from Tomcat to avoid conflicts
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
@@ -13,3 +13,4 @@ EXPOSE 8080
 
 # Run the command
 CMD ["catalina.sh", "run"]
+
